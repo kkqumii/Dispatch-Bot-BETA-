@@ -35,7 +35,7 @@ async def handle_anon(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
 
         response = await ai_client.chat.completions.create(
-            model="google/gemini-2.5-flash",  # Бесплатная и быстрая модель на OpenRouter
+            model="openrouter/free",
             messages=[
                 {
                     "role": "system",
